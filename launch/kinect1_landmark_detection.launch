@@ -1,0 +1,8 @@
+<!--  -->
+<launch>
+
+<include file="$(find freenect_launch)/launch/freenect.launch"/>
+<node pkg="kustar_aus_testing" type="static_tf_republisher.py" name="static_tf_republisher"/>
+<node pkg="kustar_aus_testing" type="landmarksDetector.py" name="landmarksDetector"/>
+
+</launch>
